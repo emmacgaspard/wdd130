@@ -339,3 +339,167 @@ footer p {
 .hero article {
     color: var(--primary-color);
 }
+
+
+/* =====================================
+   W05 CONTACT PAGE
+===================================== */
+
+.contact-main {
+    width: 840px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.contact-main > h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+/* COMPANY INFORMATION */
+
+.company-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f1f5f7;
+}
+
+.company-info h2 {
+    color: var(--secondary-color);
+}
+
+.company-info address {
+    font-style: normal;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+
+/* MAP AND CONTACT FORM */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: 2px solid var(--accent1-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f1f5f7;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.contact-form fieldset {
+    padding: 12px;
+    border: 1px solid var(--accent1-color);
+}
+
+.contact-form fieldset label {
+    display: block;
+    margin: 8px 0;
+}
+
+.contact-form .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+}
+
+# EMPLOYEE PROFILES 
+
+.employee-section {
+    margin: 35px 0;
+}
+
+.employee-section h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.employee-gallery figure {
+    margin: 0;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid var(--accent1-color);
+}
+
+.employee-gallery figcaption {
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+# MOBILE RESPONSIVENESS 
+
+@media screen and (max-width: 600px) {
+
+    .contact-main {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery img {
+        height: auto;
+        max-height: 300px;
+    }
+
+}
